@@ -7,8 +7,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+      name: 'login',
+      component: require('@/components/LoginPage').default
+      // name: 'landing-page',
+      // component: require('@/components/LandingPage').default
+    },
+    {
+      path: '/drive',
+      name: 'drive',
+      component: require('@/components/DrivePage').default
     },
     {
       path: '*',
